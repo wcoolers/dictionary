@@ -3,8 +3,8 @@ import { Container } from '@mui/material';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 import './App.css';
-import { Definitions } from './components/definitions/Definitions';
 import { Header } from './components/header/Header';
+import { Definitions } from './definitions/Definitions';
 
 function App() {
 
@@ -27,6 +27,7 @@ function App() {
     useEffect(() => {
         dictionaryApi()
 
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [word, category])
     return (
         <div 
@@ -43,7 +44,7 @@ function App() {
                     word={word} 
                     setWord={setWord} 
                 />
-                <Definitions />
+                <Definitions word={word} category={category} meanings={meanings}/>
 
             </Container>
 
