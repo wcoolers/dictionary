@@ -1,1 +1,1 @@
-axios, material-Ui, react, API
+A dictionary app built with react, axios, material-Ui and deployed through cloudflare pages 
