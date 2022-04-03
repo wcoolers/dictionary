@@ -22,7 +22,7 @@ export const Header = ({category, setCategory, word, setWord}) => {
 
     return (
         <div className='header'>
-            <span className='title'>{word ? word : "Word Chase"}</span>
+            <span className='title'>{word ? word : "Word Search"}</span>
             <div className='inputs'>
                 <ThemeProvider theme={darkTheme}>
                     <TextField 
